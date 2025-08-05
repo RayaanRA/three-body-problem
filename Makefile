@@ -1,0 +1,8 @@
+CC = gcc
+CFLAGS = -I/usr/include -Iinclude/ -O2
+LDFLAGS = -lraylib -lm -ldl -lpthread -lGL -lrt -lX11
+SRC = src/*.c
+OUT = tbp
+
+all:
+	$(CC) $(CFLAGS) $(SRC) -o $(OUT) $(LDFLAGS)
