@@ -4,5 +4,8 @@
 #include "physics.h"
 
 void euler_integration(Body* bodies);
+void leapfrog_integration(Body* bodies);
+
+
 
 #endif
